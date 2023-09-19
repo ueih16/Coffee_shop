@@ -45,7 +45,7 @@ export default defineConfig({
                         return 'assets/images/[name]-[hash][extname]'
                     }
 
-                    if (/\.(ttf)$/.test(name ?? '')) {
+                    if (/\.(ttf|woff|woff2|eot)$/.test(name ?? '')) {
                         return 'assets/fonts/[name]-[hash][extname]'
                     }
 

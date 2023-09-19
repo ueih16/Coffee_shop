@@ -28,6 +28,9 @@ module.exports = {
             animation: {
                 sildeDown: 'sildeDown 0.5s ease-in-out',
             },
+            backgroundImage: {
+                'slider-bg' : 'url("../assets/images/slide-picture.jpg")',
+            }
         }
     },
     plugins: []
