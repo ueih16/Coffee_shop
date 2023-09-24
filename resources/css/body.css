@@ -1,0 +1,11 @@
+.ct-subheadline {
+    @apply flex items-center justify-center mb-24 ;
+}
+
+.ct-subheadline-deco-line {
+    @apply w-8 h-[1px] bg-gray-200;
+}
+
+.ct-subheadline-label {
+    @apply mx-4 text-[12px] font-semibold tracking-widest text-gray-400 uppercase;
+}
