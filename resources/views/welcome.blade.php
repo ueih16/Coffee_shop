@@ -134,9 +134,9 @@
                         <div class="ct-subheadline-deco-line"></div>
                     </div>
                     <div class="feature-mugs w-[65%] mb-24 mx-auto">
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="flex justify-center items-center lg-max:grid lg-max:grid-cols-1 lg-max:place-items-center">
                             <div class="ct-product-card">
-                                <div class="border-2 mx-2 h-[540px] w-[460px] border-[#A85F4B] bg-[url('../assets/images/feature-mug-1.jpg')] bg-cover bg-no-repeat bg-center">
+                                <div class="mx-2 h-[540px] w-[460px] lg-max:h-[370px] lg-max:w-[290px] bg-[url('../assets/images/feature-mug-1.jpg')] bg-cover bg-no-repeat bg-center">
                                     <a href="#" Alt="product img">
                                         <div class="relative w-full h-full ease-in-out hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:duration-400 group">
                                             <div class="absolute top-3 right-3 w-[100px] px-4 py-2 bg-white text-center font-semibold text-[#A85F4B]">On Sale.</div>
@@ -144,17 +144,40 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="">
-                                    <a href="#" class="ct-product"></a>
+                                <div class="text-center md:mt-8 mt-4">
+                                    <a href="#" class="ct-product">
+                                        <div class="text-xl mb-3 hover:opacity-80">Pink Premium Ceramic</div>
+                                    </a>
+                                    <div class="text-normal md:mt-8 mt-4">
+                                        <div class="inline-block text-xl text-[#A85F4B] mr-1">$50.00</div>
+                                        <div class="relative inline-block text-gray-400 line-through">
+                                            $69.00 USD
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="border-2 ct-product-card mx-2 h-[540px] w-[460px] border-[#A85F4B] bg-[url('../assets/images/feature-mug-2.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" Alt="product img">
-                                    <div class="w-full h-full div">
-
+                            <div class="ct-product-card lg-max:mt-5">
+                                <div class="mx-2 h-[540px] w-[460px] lg-max:h-[370px] lg-max:w-[290px] bg-[url('../assets/images/feature-mug-1.jpg')] bg-cover bg-no-repeat bg-center">
+                                    <a href="#" Alt="product img">
+                                        <div class="relative w-full h-full ease-in-out hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:duration-400 group">
+                                            <div class="absolute top-3 right-3 w-[100px] px-4 py-2 bg-white text-center font-semibold text-[#A85F4B]">On Sale.</div>
+                                            <div class="absolute hidden group-hover:block group-hover:animate-fadeIn w-11/12 px-8 py-4 text-[12px] font-semibold tracking-widest text-center text-gray-900 uppercase -translate-x-1/2 bg-white cursor-pointer left-1/2 bottom-4 hover:bg-opacity-90">EXPLORE MUGS</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center md:mt-8 mt-4">
+                                    <a href="#" class="ct-product">
+                                        <div class="text-xl mb-3 hover:opacity-80">Golden Designers Mug</div>
+                                    </a>
+                                    <div class="text-normal md:mt-8 mt-4">
+                                        {{-- <div class="inline-block text-xl text-[#A85F4B] mr-1">$50.00</div> --}}
+                                        <div class="relative inline-block text-gray-400">
+                                            $69.00 USD
+                                            {{-- <hr class="absolute left-0 right-0 w-full top-1/2 -translate-y-1/2 bg-gray-900"> --}}
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div><!-- End slider feature-mugs -->
