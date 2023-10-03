@@ -133,10 +133,10 @@
                         <label class="ct-subheadline-label">Feature Mugs</label>
                         <div class="ct-subheadline-deco-line"></div>
                     </div>
-                    <div class="feature-mugs w-[65%] mb-24 mx-auto">
+                    <div class="feature-mugs w-[95%] lg:w-[65%] mb-24 mx-auto">
                         <div class="flex justify-center items-center lg-max:grid lg-max:grid-cols-1 lg-max:place-items-center">
-                            <div class="ct-product-card">
-                                <div class="mx-2 h-[540px] w-[460px] lg-max:h-[370px] lg-max:w-[290px] bg-[url('../assets/images/feature-mug-1.jpg')] bg-cover bg-no-repeat bg-center">
+                            <div class="ct-product-card w-full">
+                                <div class="mx-2 h-[540px] bg-[url('../assets/images/feature-mug-1.jpg')] bg-cover bg-no-repeat bg-center">
                                     <a href="#" Alt="product img">
                                         <div class="relative w-full h-full ease-in-out hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:duration-400 group">
                                             <div class="absolute top-3 right-3 w-[100px] px-4 py-2 bg-white text-center font-semibold text-[#A85F4B]">On Sale.</div>
@@ -157,8 +157,8 @@
                                 </div>
                             </div>
 
-                            <div class="ct-product-card lg-max:mt-5">
-                                <div class="mx-2 h-[540px] w-[460px] lg-max:h-[370px] lg-max:w-[290px] bg-[url('../assets/images/feature-mug-1.jpg')] bg-cover bg-no-repeat bg-center">
+                            <div class="ct-product-card w-full mt-5 lg:mt-0">
+                                <div class="mx-2 h-[540px] bg-[url('../assets/images/feature-mug-1.jpg')] bg-cover bg-no-repeat bg-center">
                                     <a href="#" Alt="product img">
                                         <div class="relative w-full h-full ease-in-out hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:duration-400 group">
                                             <div class="absolute top-3 right-3 w-[100px] px-4 py-2 bg-white text-center font-semibold text-[#A85F4B]">On Sale.</div>
