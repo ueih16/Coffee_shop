@@ -385,22 +385,22 @@
                     <!-- Start coffee-magazine -->
                     <div class="ct-subheadline">
                         <div class="ct-subheadline-deco-line"></div>
-                        <label class="ct-subheadline-label">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</label>
+                        <label class="ct-subheadline-label text-center">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</label>
                         <div class="ct-subheadline-deco-line"></div>
                     </div>
                     <div class="coffee-magazine w-[95%] lg:w-[90%] xl:w-[65%] mb-24 mx-auto">
                         <div class="flex md:flex-row flex-col-reverse justify-start">
                             <div class="flex flex-col items-center md:items-start ct-magazine-post md:w-[45%] md:mr-5 md:mb-0 md:mt-0 mt-20">
                                 <div class="text-[12px] font-semibold tracking-widest text-gray-400 uppercase mb-4">premium offer</div>
-                                <div class="text-4xl font-medium mb-4">Get our Coffee Magazine</div>
+                                <div class="text-4xl font-medium mb-4 sm:text-center">Get our Coffee Magazine</div>
                                 <div class="mb-4 flex md:flex-col justify-center items">
-                                    <div class="text-[12px] font-semibold tracking-widest text-gray-400 uppercase md:custom-leading">The most versatile furniture system ever created. <br class="hidden md:inline-block">Designed to fit your life.</div>
+                                    <div class="text-[12px] sm:text-center font-semibold tracking-widest text-gray-400 uppercase md:custom-leading">The most versatile furniture system ever created. <br class="hidden md:inline-block">Designed to fit your life.</div>
                                 </div>
                                 <button class="bg-slate-900 text-[12px] font-semibold tracking-custom text-white uppercase px-6 py-4 hover:bg-slate-800 transition-all ease-in-out duration-300">start shopping</button>
                             </div>
-                            <div class="ct-magazine-images flex md:flex-row flex-col justify-center items-center md:justify-normal md:items-start">
+                            <div class="ct-magazine-images flex flex-col md:flex-row md:justify-normal md:items-start">
                                 <div class="ct-magazine-big-image md:mr-5 md:mb-0 mb-5 h-[280px] w-full md:w-[280px] bg-[url('../assets/images/magazine_image_01.jpg')] bg-cover bg-no-repeat bg-center"></div>
-                                <div class="ct-magazine-small-image flex md:flex-col">
+                                <div class="ct-magazine-small-image flex flex-row md:flex-col">
                                     <div class="ct-magazine-small-image-01 h-[130px] md:w-[160px] md:mb-5 md:mr-0 mr-5 w-full bg-[url('../assets/images/magazine_image_02.jpg')] bg-cover bg-no-repeat bg-center"></div>
                                     <div class="ct-magazine-small-image-02 h-[130px] md:w-[160px] w-full bg-[url('../assets/images/magazine_image_03.jpg')] bg-cover bg-no-repeat bg-center"></div>
                                 </div>
