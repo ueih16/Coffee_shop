@@ -742,18 +742,18 @@
                                 Delivering the best coffee life since 1996. From coffee geeks to the real ones.
                             </div>
                             <div class="flex items-end my-2">
-                                <p class="text-[#C9C9CD] hover:text-[#B57F6F] text-sm tracking-widest">CoffeeStyle Inc. © 1996</p>
+                                <p class="text-[#C9C9CD] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest">CoffeeStyle Inc. © 1996</p>
                             </div>
                             <div class="text-[#94959B] text-[12px] font-semibold tracking-custom my-2">
                                 MENU
                             </div>
                             <div my-2>
                                 <ul class="lg-max:flex lg-max:flex-col lg-max:justify-center lg-max:items-center">
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Home</a></li>
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Our produtcs</a></li>
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">About</a></li>
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Contact</a></li>
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Styleguide</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Home</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Our produtcs</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">About</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Contact</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Styleguide</a></li>
                                 </ul>
                             </div>
                             <div class="text-[#94959B] text-[12px] font-semibold tracking-custom my-2">
@@ -761,10 +761,10 @@
                             </div>
                             <div class="flex flex-col justify-end my-2">
                                 <ul class="lg-max:flex lg-max:flex-col lg-max:justify-center lg-max:items-center">
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Facebook</a></li>
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Instagram</a></li>
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Pinterest</a></li>
-                                    <li class="text-[#83848C] hover:text-[#B57F6F] text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Twitter</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Facebook</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Instagram</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Pinterest</a></li>
+                                    <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Twitter</a></li>
                                 </ul>
                             </div>
                             <div class="text-[#94959B] text-[12px] font-semibold tracking-custom my-2">
@@ -774,7 +774,7 @@
                                 <div class="text-[#83848C] text-sm tracking-widest my-1">
                                     We're Always Happy to Help
                                 </div>
-                                <a class="text-[#3C3E4B] text-2xl tracking-wide hover:text-[#B57F6F] cursor-pointer my-1 decoration-none">
+                                <a class="text-[#3C3E4B] text-2xl tracking-wide hover:text-[#B57F6F] duration-300 transition-all ease-in-out cursor-pointer my-1 decoration-none">
                                     us@coffeestyle.io
                                 </a>
                             </div>
