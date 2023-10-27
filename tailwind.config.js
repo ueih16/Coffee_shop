@@ -3,7 +3,8 @@ module.exports = {
     content: [
         './resources/**/*.blade.php',
         './resources/**/*.js',
-        './resources/**/*.vue'
+        './resources/**/*.vue',
+        "./node_modules/tw-elements/dist/js/**/*.js",
     ],
     theme: {
         screens: {
@@ -46,5 +47,6 @@ module.exports = {
             custom: '.2em',
         },
     },
-    plugins: []
+    plugins: [require("tw-elements/dist/plugin.cjs")],
+    darkMode: "class"
 }

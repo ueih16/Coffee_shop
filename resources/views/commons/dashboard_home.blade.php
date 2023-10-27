@@ -38,6 +38,7 @@
             </div>
             <!-- End content wrapper -->
         </div>
+        {{-- <script type="text/javascript" src="../../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script> --}}
     </body>
     <!-- Stack JS -->
     @stack('down_js')
