@@ -13,6 +13,7 @@ import {
     Datepicker,
     Input,
     initTE,
+    Ripple,
 } from "tw-elements";
 
-initTE({ Datepicker, Input });
+initTE({ Datepicker, Ripple, Input });

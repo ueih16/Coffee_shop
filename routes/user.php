@@ -18,4 +18,5 @@ Route::group([
     'as'        => 'user.',
 ], function () {
     Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/login', 'LoginController@index')->name('login');
 });

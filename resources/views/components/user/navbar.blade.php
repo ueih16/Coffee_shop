@@ -1,8 +1,8 @@
 <header class="w-full py-6">
     <nav class="relative flex flex-row items-center justify-between">
-        <div class="absolute pl-5 text-xl font-semibold text-center cursor-pointer logo basis-2/6">
+        <a href="{{ route('user.home') }}" class="absolute pl-5 text-xl font-semibold text-center cursor-pointer logo basis-2/6">
             CoffeeStyle.
-        </div>
+        </a>
         <!-- End logo -->
 
         <ul
@@ -33,6 +33,8 @@
         </ul>
         <!-- End list products -->
 
+        <!-- Start cart -->
+        @if(auth('users')->user())
         <ul
             class="flex items-center justify-end ml-16 text-sm font-medium text-gray-500 uppercase basis-3/6 lg:basis-1/6 lg:justify-start"
         >
@@ -57,7 +59,15 @@
                 </a>
             </li>
         </ul>
+        @endif
         <!-- End cart -->
+
+        <!-- Login -->
+        <div class="flex items-center px-1 basis-1/6 hover:cursor-pointer sm:px-0">
+            <div class="ct-top-menu-item">
+                <a href="{{ route('user.login') }}">Login</a>
+            </div>
+        </div>
 
         <!-- Start list -->
         <div class="flex items-center px-4 basis-1/6 hover:cursor-pointer sm:px-0 lg:hidden">

@@ -19,11 +19,7 @@
     <body>
         <div class="font-karla" id="root">
             <!-- Start content wrapper -->
-            <div class="max-w-screen-xl px-8 mx-auto text-base content-wrapper">
-                <!-- Start header section -->
-                <x-user.navbar />
-                <!-- End header section -->
-
+            <div class="max-w-screen-xl text-base content-wrapper">
                 <!-- Start main section -->
                 <main>
                     <!-- Start slider -->
@@ -31,13 +27,10 @@
                     <!-- End slider subscribe-us -->
                 </main>
                 <!-- End main -->
-
-                <!-- Start footer section -->
-                <x-user.footer />
-                <!-- End footer section -->
             </div>
             <!-- End content wrapper -->
         </div>
+        {{-- <script type="text/javascript" src="../../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script> --}}
     </body>
     <!-- Stack JS -->
     @stack('down_js')
