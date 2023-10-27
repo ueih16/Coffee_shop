@@ -12,6 +12,7 @@ module.exports = {
             'md': {'min': '768px'},    //medium screens
             'lg': {'min': '1024px'},   //large screens
             'lg-max': {'max': '1024px'},   //large screens
+            'lg-max': {'max': '1024px'},   //large screens
             'xl': {'min': '1280px'},   //extra-large screens
         },
         fontFamily: {

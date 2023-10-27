@@ -1,6 +1,6 @@
 <header class="w-full py-6">
     <nav class="relative flex flex-row items-center justify-between">
-        <a href="{{ route('user.home') }}" class="absolute pl-5 text-xl font-semibold text-center cursor-pointer logo basis-2/6">
+        <a href="{{ route('user.home') }}" class="text-xl font-semibold text-center cursor-pointer logo">
             CoffeeStyle.
         </a>
         <!-- End logo -->
@@ -27,8 +27,11 @@
             <li class="ct-top-menu-item">
                 <a class="" href="javascript:void(0)">StyleGuide</a>
             </li>
-            <li class="px-2 ct-top-menu-item ct-top-menu-item-active">
+            <li class="ct-top-menu-item">
                 <a class="" href="https://github.com/ueih16" target="blank">Ueih</a>
+            </li>
+            <li class="ct-top-menu-item lg:hidden">
+                <a class="" href="{{ route('user.login') }}">login</a>
             </li>
         </ul>
         <!-- End list products -->
@@ -36,7 +39,7 @@
         <!-- Start cart -->
         @if(auth('users')->user())
         <ul
-            class="flex items-center justify-end ml-16 text-sm font-medium text-gray-500 uppercase basis-3/6 lg:basis-1/6 lg:justify-start"
+            class="flex items-center justify-end ml-16 text-sm font-medium text-gray-500 uppercase lg:justify-start"
         >
             <li class="">
                 <a class="flex items-center ct-top-menu-item" href="javascript:void(0)">
@@ -63,29 +66,29 @@
         <!-- End cart -->
 
         <!-- Login -->
-        <div class="flex items-center px-1 basis-1/6 hover:cursor-pointer sm:px-0">
-            <div class="ct-top-menu-item">
-                <a href="{{ route('user.login') }}">Login</a>
-            </div>
+        <div class="ct-top-menu-item lg-max:hidden">
+            <a href="{{ route('user.login') }}">Login</a>
         </div>
 
         <!-- Start list -->
-        <div class="flex items-center px-4 basis-1/6 hover:cursor-pointer sm:px-0 lg:hidden">
-            <svg
-                class="w-6 h-6"
-                fill="none"
-                id="toggle-ct-top-menu"
-                stroke-width="1.5"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                />
-            </svg>
+        <div class="flex items-center hover:cursor-pointer lg:hidden">
+            <div>
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    id="toggle-ct-top-menu"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </div>
         </div>
         <!-- End list -->
     </nav>
