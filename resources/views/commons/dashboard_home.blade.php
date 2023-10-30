@@ -7,13 +7,16 @@
         <!-- /*icon*/ -->
         <link href="{{ Vite::asset('resources/assets/images/logo.jpg') }}" rel="apple-touch-icon" />
         <link href="{{ Vite::asset('resources/assets/images/logo.jpg') }}" rel="shortcut icon" />
+        <!-- /*title*/ -->
         <title>@yield('title')</title>
+        <!-- Import CSS -->
         @Vite(['resources/css/app.css'])
         @stack('css')
-        <!-- Import CSS -->
+        <!-- Import JS -->
         @Vite(['resources/js/app.js'])
         @stack('up_js')
-        <!-- Import JS -->
+        <!-- Import jQuery -->
+        <script src="{{ asset('node_modules/jquery/dist/jquery.min.js') }}"></script>
     </head>
 
     <body>

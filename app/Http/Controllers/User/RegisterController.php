@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\BaseController;
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use Illuminate\View\View;
 
 class RegisterController extends BaseController
@@ -28,5 +29,13 @@ class RegisterController extends BaseController
         auth('users')->login($user);
 
         return redirect()->route('user.login');
+=======
+
+class RegisterController extends BaseController
+{
+    public function index()
+    {
+        return view('user.register.index');
+>>>>>>> 7488440b735fc61bf679cba0e8b32cf9fc53c5b3
     }
 }

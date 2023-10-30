@@ -14,6 +14,7 @@ class LoginController extends BaseController
         return view('user.auth.login');
     }
 
+<<<<<<< HEAD
     public function loggingIn(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -34,5 +35,10 @@ class LoginController extends BaseController
         } else {
             return redirect()->back()->withError('Invalid credentials!')->withInput();
         }
+=======
+    public function redirect()
+    {
+        return redirect()->route('user.login')->withErrors('123');
+>>>>>>> 7488440b735fc61bf679cba0e8b32cf9fc53c5b3
     }
 }
