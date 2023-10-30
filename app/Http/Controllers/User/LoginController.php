@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\BaseController;
-use Dotenv\Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\View\View;
 
 class LoginController extends BaseController
@@ -14,7 +14,6 @@ class LoginController extends BaseController
         return view('user.auth.login');
     }
 
-<<<<<<< HEAD
     public function loggingIn(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -23,7 +22,7 @@ class LoginController extends BaseController
         ]);
 
         if($validator->fails()) {
-            return redirect()->back()->withError(implode("<br>", $validator->errors()->all()))->withInput();
+            return redirect()->back()->withErrors(implode("<br>", $validator->errors()->all()))->withInput();
         }
 
         $credentials = $request->only('email', 'password');
@@ -35,10 +34,5 @@ class LoginController extends BaseController
         } else {
             return redirect()->back()->withError('Invalid credentials!')->withInput();
         }
-=======
-    public function redirect()
-    {
-        return redirect()->route('user.login')->withErrors('123');
->>>>>>> 7488440b735fc61bf679cba0e8b32cf9fc53c5b3
     }
 }

@@ -29,6 +29,7 @@
                                 class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                 id="email-input"
                                 placeholder="Email address"
+                                name="email"
                             />
                             <label
                                 for="email-input"
@@ -44,6 +45,7 @@
                                 class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                 id="password-input"
                                 placeholder="Password"
+                                name="password"
                             />
                             <label
                                 for="password-input"
@@ -54,7 +56,7 @@
                         </div>
                         <!--Forgot password link-->
                         <a href="javascript:void(0)" class="flex justify-end text-sm text-light-coffee mt-1">Forgot your password?</a>
-                        <button type="button" class="block w-full my-6 border bg-none border-light-coffee text-light-coffee px-3 py-[0.32rem] leading-[2.15] font-bold text-xl hover:bg-light-coffee hover:text-white transition-all duration-300 ease-linear">
+                        <button type="submit" class="block w-full my-6 border bg-none border-light-coffee text-light-coffee px-3 py-[0.32rem] leading-[2.15] font-bold text-xl hover:bg-light-coffee hover:text-white transition-all duration-300 ease-linear">
                             LOGIN
                         </button>
                     </form>
@@ -66,11 +68,7 @@
                     <!-- Login with social media -->
                     <div class="grid grid-cols-2 gap-x-1">
                         <!-- Login with Facebook -->
-<<<<<<< HEAD
                         <a type="button" class="whitespace-nowrap flex justify-center items-center w-full my-6 border bg-none border-primary text-primary px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-primary hover:text-white transition-all duration-300 ease-linear">
-=======
-                        <a href="{{ route('user.redirect') }}" class="whitespace-nowrap flex justify-center items-center w-full my-6 border bg-none border-primary text-primary px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-primary hover:text-white transition-all duration-300 ease-linear">
->>>>>>> 7488440b735fc61bf679cba0e8b32cf9fc53c5b3
                             <i class="fa-brands fa-square-facebook"></i>
                             <div class="px-2">Login with Facebook</div>
                         </a>

@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\BaseController;
+use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use Illuminate\View\View;
 
 class RegisterController extends BaseController
@@ -16,26 +17,20 @@ class RegisterController extends BaseController
 
     public function registering(Request $request)
     {
-        $this->validate($request, [
-            'email'    => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8',
+        $validator = Validator::make($request->all(), [
+            'email'    => 'required|email|unique:users',
+            'password' => 'required|min:6|max:255|confirmed',
         ]);
 
-        $user = $this->user->create([
+        if($validator->fails()) {
+            return redirect()->back()->withErrors(implode("<br>", $validator->errors()->all()));
+        }
+
+        $user = User::create([
             'email'    => $request->email,
             'password' => bcrypt($request->password)
         ]);
 
-        auth('users')->login($user);
-
         return redirect()->route('user.login');
-=======
-
-class RegisterController extends BaseController
-{
-    public function index()
-    {
-        return view('user.register.index');
->>>>>>> 7488440b735fc61bf679cba0e8b32cf9fc53c5b3
     }
 }

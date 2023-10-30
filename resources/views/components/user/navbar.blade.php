@@ -70,14 +70,6 @@
         @endif
         <!-- End cart -->
 
-<<<<<<< HEAD
-=======
-        <!-- Login -->
-        <div class="ct-top-menu-item hidden lg:inline-block mr-10">
-            <a href="{{ route('user.login') }}">Login</a>
-        </div>
->>>>>>> 7488440b735fc61bf679cba0e8b32cf9fc53c5b3
-
         <!-- Start list -->
         <div class="flex items-center hover:cursor-pointer lg:hidden">
             <div>
