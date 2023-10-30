@@ -7,13 +7,16 @@
         <!-- /*icon*/ -->
         <link href="{{ Vite::asset('resources/assets/images/logo.jpg') }}" rel="apple-touch-icon" />
         <link href="{{ Vite::asset('resources/assets/images/logo.jpg') }}" rel="shortcut icon" />
+        <!-- /*title*/ -->
         <title>@yield('title')</title>
+        <!-- Import CSS -->
         @Vite(['resources/css/app.css'])
         @stack('css')
-        <!-- Import CSS -->
+        <!-- Import JS -->
         @Vite(['resources/js/app.js'])
         @stack('up_js')
-        <!-- Import JS -->
+        <!-- Import jQuery -->
+        <script src="{{ asset('js/jquery-3.7.1.min.js') }}" type="text/javascript"></script>
     </head>
 
     <body>
@@ -22,6 +25,7 @@
             <div class="max-w-screen-xl text-base content-wrapper">
                 <!-- Start main section -->
                 <main>
+                    <x-user.toast />
                     <!-- Start slider -->
                     @yield('content')
                     <!-- End slider subscribe-us -->
@@ -30,7 +34,6 @@
             </div>
             <!-- End content wrapper -->
         </div>
-        {{-- <script type="text/javascript" src="../../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script> --}}
     </body>
     <!-- Stack JS -->
     @stack('down_js')

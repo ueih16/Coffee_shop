@@ -12,7 +12,7 @@
     <div class="main-content">
         <div class="flex">
             <!-- Left side image -->
-            <img class="h-screen w-[40%] object-cover" src="{{ Vite::asset('resources/assets/images/login_thumb.webp') }}" alt="login_thumb">
+            <img loading="lazy" class="h-screen w-[40%] object-cover" src="{{ Vite::asset('resources/assets/images/login_thumb.webp') }}" alt="login_thumb">
 
             <!-- Right side -->
             <div class="w-full flex flex-col justify-center items-center px-24">
@@ -61,10 +61,10 @@
                     <!-- Login with social media -->
                     <div class="grid grid-cols-2 gap-x-1">
                         <!-- Login with Facebook -->
-                        <button type="button" class="whitespace-nowrap flex justify-center items-center w-full my-6 border bg-none border-primary text-primary px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-primary hover:text-white transition-all duration-300 ease-linear">
+                        <a href="{{ route('user.redirect') }}" class="whitespace-nowrap flex justify-center items-center w-full my-6 border bg-none border-primary text-primary px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-primary hover:text-white transition-all duration-300 ease-linear">
                             <i class="fa-brands fa-square-facebook"></i>
                             <div class="px-2">Login with Facebook</div>
-                        </button>
+                        </a>
                         <!-- Login with Google -->
                         <button type="button" class="whitespace-nowrap flex justify-center items-center w-full my-6 border bg-none border-red-500 text-red-500 px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-red-500 hover:text-white transition-all duration-300 ease-linear">
                             <i class="fa-brands fa-square-google-plus"></i>

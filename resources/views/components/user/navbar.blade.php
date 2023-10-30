@@ -66,7 +66,7 @@
         <!-- End cart -->
 
         <!-- Login -->
-        <div class="ct-top-menu-item hidden lg:inline-block">
+        <div class="ct-top-menu-item hidden lg:inline-block mr-10">
             <a href="{{ route('user.login') }}">Login</a>
         </div>
 

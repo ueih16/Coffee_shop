@@ -11,4 +11,9 @@ class LoginController extends BaseController
     {
         return view('user.auth.login');
     }
+
+    public function redirect()
+    {
+        return redirect()->route('user.login')->withErrors('123');
+    }
 }
