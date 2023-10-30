@@ -6,7 +6,7 @@
         <!-- End logo -->
 
         <ul
-            class="hidden text-sm font-medium text-gray-500 uppercase basis-3/6 lg:flex lg:items-center lg:justify-end lg:gap-8"
+            class="hidden text-sm font-medium text-gray-500 uppercase lg:flex lg:items-center lg:justify-end lg:gap-8"
             id="ct-top-menu"
         >
             <li class="ct-top-menu-item">
@@ -62,13 +62,14 @@
                 </a>
             </li>
         </ul>
+        @else
+            <!-- Login -->
+            <div class="ct-top-menu-item hidden lg:inline-block">
+                <a href="{{ route('user.login') }}">Login</a>
+            </div>
         @endif
         <!-- End cart -->
 
-        <!-- Login -->
-        <div class="ct-top-menu-item hidden lg:inline-block">
-            <a href="{{ route('user.login') }}">Login</a>
-        </div>
 
         <!-- Start list -->
         <div class="flex items-center hover:cursor-pointer lg:hidden">

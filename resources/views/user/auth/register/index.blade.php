@@ -1,6 +1,6 @@
 @extends('commons.dashboard_login')
 
-@section('title', 'Login')
+@section('title', 'Register')
 
 @push('css')
 @endpush
@@ -16,11 +16,10 @@
 
             <!-- Right side -->
             <div class="w-full flex flex-col justify-center items-center px-24">
-                <p class="text-2xl uppercase font-semibold font-karla tracking-widest text-gray-400">Welcome back</p>
-                <p class="font-karla tracking-widest text-gray-400">Enter your account credentials to view your detail</p>
+                <p class="text-2xl uppercase font-semibold font-karla tracking-widest text-gray-400">Register</p>
 
                 <div class="w-[60%] mt-6">
-                    <form method="post" action="{{ route('user.logging.in') }}">
+                    <form method="post" action="{{ route('user.registering') }}">
                         @csrf
                         <!-- Email input -->
                         <div class="relative mt-6" data-te-input-wrapper-init>
@@ -52,10 +51,8 @@
                                 Password
                             </label>
                         </div>
-                        <!--Forgot password link-->
-                        <a href="javascript:void(0)" class="flex justify-end text-sm text-light-coffee mt-1">Forgot your password?</a>
-                        <button type="button" class="block w-full my-6 border bg-none border-light-coffee text-light-coffee px-3 py-[0.32rem] leading-[2.15] font-bold text-xl hover:bg-light-coffee hover:text-white transition-all duration-300 ease-linear">
-                            LOGIN
+                        <button type="button" class="block w-full my-6 border bg-none border-light-coffee text-light-coffee px-3 py-[0.32rem] leading-[2.15] font-bold text-xl hover:bg-light-coffee hover:text-white transition-all duration-300 ease-linear uppercase">
+                            Register
                         </button>
                     </form>
                     <div class="flex justify-center items-center">
@@ -75,10 +72,6 @@
                             <i class="fa-brands fa-square-google-plus"></i>
                             <div class="px-2">Login with Google</div>
                         </a>
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <p class="inline-block pr-1 text-base tracking-wider text-gray-500">Don't have an account?</p>
-                        <a href="{{ route('user.register') }}" class="inline-block text-base tracking-wider text-light-coffee">Sign up</a>
                     </div>
                 </div>
             </div>

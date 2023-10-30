@@ -12,7 +12,7 @@
 <div
     class="slider h-[530px] bg-[url('../assets/images/slide-picture.jpg')] bg-cover bg-bottom bg-no-repeat"
 >
-    <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-40">
+    <div class="flex bg-gray-900 items-center justify-center w-full h-full bg-opacity-40">
         <div class="mx-16 text-center text-white">
             <div class="my-3 text-xs font-semibold tracking-widest uppercase">
                 Best to buy Coffee
