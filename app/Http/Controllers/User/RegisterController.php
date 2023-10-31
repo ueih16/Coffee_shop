@@ -23,14 +23,14 @@ class RegisterController extends BaseController
         ]);
 
         if($validator->fails()) {
-            return redirect()->back()->withErrors(implode("<br>", $validator->errors()->all()));
+            return redirect()->back()->withErrors($validator->errors()->all())->withInput();
         }
 
-        $user = User::create([
+        User::query()->create([
             'email'    => $request->email,
             'password' => bcrypt($request->password)
         ]);
 
-        return redirect()->route('user.login');
+        return redirect()->route('user.login')->withSuccess('You have successfully registered!.');
     }
 }

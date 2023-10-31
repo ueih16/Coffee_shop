@@ -9,7 +9,7 @@ use Illuminate\View\View;
 
 class LoginController extends BaseController
 {
-    public function index(): View
+    public function index()
     {
         return view('user.auth.login');
     }
@@ -30,9 +30,16 @@ class LoginController extends BaseController
         auth('users')->attempt($credentials);
 
         if(auth('users')->check()) {
-            return redirect()->route('user.home')->withSuccess('You have successfully logged in!');
+            return redirect()->route('user.home')->withSuccess('You have successfully logged in!.');
         } else {
-            return redirect()->back()->withError('Invalid credentials!')->withInput();
+            return redirect()->back()->withErrors('Invalid credentials!')->withInput();
         }
+    }
+
+    public function logout()
+    {
+        auth('users')->logout();
+
+        return redirect()->route('user.home')->withSuccess('You have successfully logged out!');
     }
 }

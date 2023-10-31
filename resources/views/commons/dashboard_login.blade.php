@@ -25,7 +25,9 @@
             <div class="max-w-screen-xl text-base content-wrapper">
                 <!-- Start main section -->
                 <main>
+                    <!-- Start toast -->
                     <x-user.toast />
+                    <!-- End toast -->
                     <!-- Start slider -->
                     @yield('content')
                     <!-- End slider subscribe-us -->

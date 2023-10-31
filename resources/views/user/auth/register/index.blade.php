@@ -12,13 +12,13 @@
     <div class="main-content">
         <div class="flex">
             <!-- Left side image -->
-            <img class="h-screen w-[40%] object-cover" src="{{ Vite::asset('resources/assets/images/login_thumb.webp') }}" alt="login_thumb">
+            <img loading="lazy" class="lg-max:hidden h-screen w-[40%] object-cover" src="{{ Vite::asset('resources/assets/images/login_thumb.webp') }}" alt="login_thumb">
 
             <!-- Right side -->
-            <div class="w-full flex flex-col justify-center items-center px-24">
-                <p class="text-2xl uppercase font-semibold font-karla tracking-widest text-gray-400">Register</p>
+            <div class="w-full flex flex-col justify-center items-center px-24 sm-max:px-10 py-24">
+                <p class="text-2xl uppercase font-semibold font-karla tracking-widest text-gray-400 text-center">Register</p>
 
-                <div class="w-[60%] mt-6">
+                <div class="w-[60%] sm-max:w-full mt-6">
                     <form method="post" action="{{ route('user.registering') }}">
                         @csrf
                         <!-- Email input -->
@@ -79,17 +79,22 @@
                         <div class="h-[1px] bg-light-coffee w-full"></div>
                     </div>
                     <!-- Login with social media -->
-                    <div class="grid grid-cols-2 gap-x-1">
+                    <div class="flex flex-col xl:grid xl:grid-cols-2 xl:gap-x-1">
                         <!-- Login with Facebook -->
-                        <a type="button" class="whitespace-nowrap flex justify-center items-center w-full my-6 border bg-none border-primary text-primary px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-primary hover:text-white transition-all duration-300 ease-linear">
+                        <a type="button" class="whitespace-nowrap flex justify-center items-center w-full xl:my-6 my-1 border bg-none border-primary text-primary px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-primary hover:text-white transition-all duration-300 ease-linear">
                             <i class="fa-brands fa-square-facebook"></i>
                             <div class="px-2">Login with Facebook</div>
                         </a>
                         <!-- Login with Google -->
-                        <a type="button" class="whitespace-nowrap flex justify-center items-center w-full my-6 border bg-none border-red-500 text-red-500 px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-red-500 hover:text-white transition-all duration-300 ease-linear">
+                        <a type="button" class="whitespace-nowrap flex justify-center items-center w-full xl:my-6 my-1 border bg-none border-red-500 text-red-500 px-3 py-[0.32rem] leading-[2.15] text-base hover:bg-red-500 hover:text-white transition-all duration-300 ease-linear">
                             <i class="fa-brands fa-square-google-plus"></i>
                             <div class="px-2">Login with Google</div>
                         </a>
+                    </div>
+                    <!-- Login -->
+                    <div class="flex justify-center items-center">
+                        <p class="inline-block pr-1 text-base tracking-wider text-gray-500">If you have an account?</p>
+                        <a href="{{ route('user.login') }}" class="inline-block text-base tracking-wider text-light-coffee">Login</a>
                     </div>
                 </div>
             </div>
