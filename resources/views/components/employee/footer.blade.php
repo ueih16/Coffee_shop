@@ -13,7 +13,7 @@
             <div class="text-[#94959B] text-[12px] font-semibold tracking-custom my-2">
                 MENU
             </div>
-            <div my-2>
+            <div class="my-2">
                 <ul class="lg-max:flex lg-max:flex-col lg-max:justify-center lg-max:items-center">
                     <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Home</a></li>
                     <li class="text-[#83848C] hover:text-[#B57F6F] duration-300 transition-all ease-in-out text-sm tracking-widest my-1 cursor-pointer"><a href="javascript:void(0)">Our produtcs</a></li>

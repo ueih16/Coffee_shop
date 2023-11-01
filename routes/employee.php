@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group([
-    'namespace' => 'App\Http\Controllers\User',
-    'as'        => 'user.',
+    'namespace' => 'App\Http\Controllers\Employee',
+    'as'        => 'employee.',
 ], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/login', 'LoginController@index')->name('login');

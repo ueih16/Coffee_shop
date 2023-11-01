@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Employee;
 
 use App\Http\Controllers\BaseController;
 use Illuminate\Http\Request;
@@ -11,7 +11,7 @@ class LoginController extends BaseController
 {
     public function index()
     {
-        return view('user.auth.login');
+        return view('employee.auth.login');
     }
 
     public function loggingIn(Request $request)
@@ -27,10 +27,10 @@ class LoginController extends BaseController
 
         $credentials = $request->only('email', 'password');
 
-        auth('users')->attempt($credentials);
+        auth('employees')->attempt($credentials);
 
-        if(auth('users')->check()) {
-            return redirect()->route('user.home')->withSuccess('You have successfully logged in!.');
+        if(auth('employees')->check()) {
+            return redirect()->route('employee.home')->withSuccess('You have successfully logged in!.');
         } else {
             return redirect()->back()->withErrors('Invalid credentials!')->withInput();
         }
@@ -38,8 +38,8 @@ class LoginController extends BaseController
 
     public function logout()
     {
-        auth('users')->logout();
+        auth('employees')->logout();
 
-        return redirect()->route('user.home')->withSuccess('You have successfully logged out!');
+        return redirect()->route('employee.home')->withSuccess('You have successfully logged out!');
     }
 }

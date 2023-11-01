@@ -24,14 +24,14 @@
             <!-- Start content wrapper -->
             <div class="max-w-screen-xl px-8 mx-auto text-base content-wrapper">
                 <!-- Start header section -->
-                <x-user.navbar />
+                <x-employee.navbar />
                 <!-- End header section -->
 
                 <!-- Start main section -->
                 <main>
 
                     <!-- Start toast -->
-                    <x-user.toast />
+                    <x-employee.toast />
                     <!-- End toast -->
 
                     <!-- Start slider -->
@@ -42,7 +42,7 @@
                 <!-- End main -->
 
                 <!-- Start footer section -->
-                <x-user.footer />
+                <x-employee.footer />
                 <!-- End footer section -->
             </div>
             <!-- End content wrapper -->

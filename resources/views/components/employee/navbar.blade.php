@@ -1,6 +1,6 @@
 <header class="w-full py-6">
     <nav class="relative flex flex-row items-center justify-between">
-        <a href="{{ route('user.home') }}" class="text-xl font-semibold text-center cursor-pointer logo">
+        <a href="{{ route('employee.home') }}" class="text-xl font-semibold text-center cursor-pointer logo">
             CoffeeStyle.
         </a>
         <!-- End logo -->
@@ -30,20 +30,20 @@
             <li class="ct-top-menu-item">
                 <a class="" href="https://github.com/ueih16" target="blank">Ueih</a>
             </li>
-            @if(auth('users')->user())
+            @if(auth('employees')->check())
                 <li class="ct-top-menu-item lg:hidden">
-                    <a class="" href="{{ route('user.logout') }}">logout</a>
+                    <a class="" href="{{ route('employee.logout') }}">logout</a>
                 </li>
             @else
                 <li class="ct-top-menu-item lg:hidden">
-                    <a class="" href="{{ route('user.login') }}">login</a>
+                    <a class="" href="{{ route('employee.login') }}">login</a>
                 </li>
             @endif
         </ul>
         <!-- End list products -->
 
         <!-- Start cart -->
-        @if(auth('users')->user())
+        @if(auth('employees')->check())
             <ul
                 class="flex items-center justify-end ml-16 text-sm font-medium text-gray-500 uppercase lg:justify-start"
             >
@@ -68,13 +68,13 @@
                     </a>
                 </li>
                 <li class="ct-top-menu-item hidden lg:inline-block ml-2">
-                    <a class="" href="{{ route('user.logout') }}">Logout</a>
+                    <a class="" href="{{ route('employee.logout') }}">Logout</a>
                 </li>
             </ul>
         @else
             <!-- Login -->
             <div class="ct-top-menu-item hidden lg:inline-block">
-                <a href="{{ route('user.login') }}">Login</a>
+                <a href="{{ route('employee.login') }}">Login</a>
             </div>
         @endif
         <!-- End cart -->

@@ -26,7 +26,7 @@
                 <!-- Start main section -->
                 <main>
                     <!-- Start toast -->
-                    <x-user.toast />
+                    <x-employee.toast />
                     <!-- End toast -->
                     <!-- Start slider -->
                     @yield('content')

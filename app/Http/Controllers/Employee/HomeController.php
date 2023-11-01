@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Employee;
 
 use App\Http\Controllers\BaseController;
 use Illuminate\Http\Request;
@@ -10,6 +10,6 @@ class HomeController extends BaseController
 {
     public function index(): View
     {
-        return view('user.home');
+        return view('employee.home');
     }
 }

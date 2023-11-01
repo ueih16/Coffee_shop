@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Employee;
 
 use App\Http\Controllers\BaseController;
+use App\Models\Employee;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -12,13 +13,13 @@ class RegisterController extends BaseController
 {
     public function index(): View
     {
-        return view('user.auth.register.index');
+        return view('employee.auth.register.index');
     }
 
     public function registering(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'email'    => 'required|email|unique:users',
+            'email'    => 'required|email|unique:employees',
             'password' => 'required|min:6|max:255|confirmed',
         ]);
 
@@ -26,11 +27,11 @@ class RegisterController extends BaseController
             return redirect()->back()->withErrors($validator->errors()->all())->withInput();
         }
 
-        User::query()->create([
+        Employee::query()->create([
             'email'    => $request->email,
             'password' => bcrypt($request->password)
         ]);
 
-        return redirect()->route('user.login')->withSuccess('You have successfully registered!.');
+        return redirect()->route('employee.login')->withSuccess('You have successfully registered!.');
     }
 }
