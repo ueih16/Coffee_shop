@@ -13,11 +13,23 @@ class Employee extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+
+    // Tên bảng trong database (nếu khi chuẩn tên bảng theo convention thì không cần khai báo)
+    // protected $table = 'employees';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+
+    // Các trường trong database có thể thay đổi hoặc ghi mới
     protected $fillable = [
         'name',
         'email',
@@ -30,6 +42,8 @@ class Employee extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    // Ẩn các trường trong database
     protected $hidden = [
         'password',
         'remember_token',
@@ -40,8 +54,20 @@ class Employee extends Authenticatable
      *
      * @var array<string, string>
      */
+
+    // Ép kiểu dữ liệu trả từ database về
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+    ];
+
+    /**
+     * The attributes that should be appended.
+     *
+     * @var array<int, string>
+     */
+
+    // Thêm cột ảo vào model
+    protected $appends = [
     ];
 }
