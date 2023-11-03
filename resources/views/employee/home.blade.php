@@ -1,4 +1,4 @@
-@extends('commons.dashboard_home')
+@extends('commons.employee.dashboard_home')
 
 @section('title', 'Home')
 

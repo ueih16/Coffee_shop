@@ -1,4 +1,4 @@
-@extends('commons.dashboard_login')
+@extends('commons.employee.dashboard_login')
 
 @section('title', 'Login')
 

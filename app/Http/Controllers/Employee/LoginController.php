@@ -31,7 +31,7 @@ class LoginController extends BaseController
         auth('employees')->attempt($credentials);
 
         return auth('employees')->check() ? redirect()->route('employee.home')->withSuccess('You have successfully logged in!.')
-                                                : redirect()->back()->withInput()->withErrors('Invalid credentials!.');
+                                                : redirect()->back()->withInput()->withError('Invalid credentials!.');
     }
 
     public function logout(Request $request): RedirectResponse
